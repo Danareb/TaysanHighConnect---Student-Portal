@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Title */
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Grid layout for strands */
+.product-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Box styling for each strand */
+.box {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.box p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.orderNow button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.orderNow button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-row {
+        grid-template-columns: 1fr 1fr; /* 2 columns on small screens */
+    }
+
+    .box {
+        width: 100%; /* Full width for boxes on smaller screens */
+    }
+}
+#clubs {
+    padding: 50px;
+    text-align: center;
+}
+
+#clubs h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item .img img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.grid-item .content {
+    padding: 10px;
+}
+
+.grid-item .content h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.grid-item .content p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.grid-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
